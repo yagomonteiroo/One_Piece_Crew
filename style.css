@@ -1,0 +1,240 @@
+*{
+  margin: unset;
+  padding: unset;
+  box-sizing: border-box;
+}
+
+html, body{
+  height: 100vh;
+  overflow: hidden;
+}
+
+.shadow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  width: 80vw;
+  background: linear-gradient(-233deg, #000 40%, rgba(0, 0, 0, 0) 65%) no-repeat;
+}
+
+.personagem{
+  height: 100vh;
+}
+
+.personagem .img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.personagem .conteudo{
+  position: absolute;
+  top: 0;
+  left: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  max-width: 380px;
+  z-index: 1;
+}
+
+.conteudo .logo {
+  background-image: url(./assets/img/luffy-logo.png);
+  background-size: cover;
+  margin-bottom: 35px;
+  cursor: pointer;
+  
+}
+.conteudo  .logo-luffy {
+  height: 100px;
+  width: 230px;
+  background-image: url('./assets/img/luffy-logo.png');
+}
+.conteudo  .logo-brook {
+  height: 140px;
+  width: 270px;
+  background-image: url('./assets/img/brook-logo.png'), radial-gradient( #ffffff15 5%, #ffffff00 75%);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: -10px;
+  margin-left: -10px;
+}
+.conteudo  .logo-chopper {
+  height: 150px;
+  width: 280px;
+  background-image: url('./assets/img/chopper-logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: -35px;
+  margin-left: -20px;
+}
+.conteudo  .logo-sanji {
+  height: 110px;
+  width: 250px;
+  background-image: url('./assets/img/sanji-logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+.conteudo  .logo-zoro {
+  height: 100px;
+  width: 287px;
+  background-image: url('./assets/img/zoro-logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+.conteudo  .logo-nami {
+  height: 110px;
+  width: 265px;
+  background-image: url('./assets/img/nami-logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+.conteudo  .logo-usopp {
+  height: 110px;
+  width: 265px;
+  background-image: url('./assets/img/usopp-logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 4px;
+  margin-left: -18px;
+}
+.conteudo  .logo-robin {
+  height: 110px;
+  width: 265px;
+  background-image: url('./assets/img/robin-logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 9px;
+}
+.conteudo  .logo-franky {
+  height: 117px;
+  width: 262px;
+  background-image: url('./assets/img/franky-logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 15px;
+}
+.conteudo  .logo-jinbei {
+  height: 80px;
+  width: 245px;
+  background-image: url('./assets/img/jinbei-logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 25px;
+}
+
+.conteudo .nome-personagem {
+  color: #ffffff;
+  font-size: 48px;
+  font-family: "Secular One";
+  font-weight: 400;
+  margin-bottom: 20px;
+  line-height: 1;
+}
+.conteudo .descricao {
+  color: #ffffff;
+  font-family: "Rubik";
+  line-height: 24px;
+}
+
+.nav-bar{
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 20vw;
+  max-width: 135px;
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+
+}
+
+.nav-bar .botoes{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  list-style: none;
+}
+
+.botoes .botao {
+  border: none;
+  background: black;
+  cursor: pointer;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  box-shadow: 0px 0px 12px -1px #ffdcc3;
+}
+
+.botoes .botao:hover {
+  transform: scale(1.3);
+}
+.botoes .botao:active {
+  transform: scale(1.2);
+}
+
+.botoes .botao img {
+  width:55px;
+  position: relative;
+}
+.botoes .botao img:hover {
+  transform: scale(1.1);
+}
+.botao__franky img.franky {
+  width:60px;
+}
+.botao__usopp img.usopp {
+  width:70px;
+  rotate: 40deg;
+}
+
+.botoes .botao i{
+  width: 105px;
+  height: 105px;
+  position: absolute;
+}
+.botao__brook i {
+  background: radial-gradient(circle, #ff7373 26%, rgba(0, 0, 0, 0) 38%) no-repeat;
+}
+.botao__chopper i {
+  background: radial-gradient(circle, #ffafe3 26%, rgba(0, 0, 0, 0) 43%) no-repeat;
+}
+.botao__sanji i {
+  background: radial-gradient(circle, #ffdd00 22%, rgba(0, 0, 0, 0) 40%) no-repeat;
+}
+.botao__zoro i {
+  background: radial-gradient(circle, #15d200 22%, rgba(0, 0, 0, 0) 38%) no-repeat;
+}
+.botao__luffy i {
+  background: radial-gradient(circle, #ee0000 22%, rgba(0, 0, 0, 0) 38%) no-repeat;
+}
+.botao__nami i {
+  background: radial-gradient(circle, #00fdfd 22%, rgba(0, 0, 0, 0) 38%) no-repeat;
+}
+.botao__usopp i {
+  background: radial-gradient(circle, #c8ff00 16%, rgba(0, 0, 0, 0) 38%) no-repeat;
+}
+.botao__robin i {
+  background: radial-gradient(circle, #fd00f0 22%, rgba(0, 0, 0, 0) 39%) no-repeat;
+}
+.botao__franky i {
+  background: radial-gradient(circle, #00fdfd 22%, rgba(0, 0, 0, 0) 38%) no-repeat;
+}
+.botao__jinbei i {
+  background: radial-gradient(circle, #d93333 22%, rgba(0, 0, 0, 0) 40%) no-repeat;
+}
+
+
